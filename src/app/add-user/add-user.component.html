@@ -1,0 +1,13 @@
+<p>add-user works!</p>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label >name</label>
+<input type="text" formControlName="name"><br>
+<label >email</label>
+
+<input type="email" formControlName="email"><br>
+<label >mobile</label>
+
+<input type="number" formControlName="mobile"><br>
+<button type="submit" [disabled]="userForm.invalid">submit</button>
+
+</form>

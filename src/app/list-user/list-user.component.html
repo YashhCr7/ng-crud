@@ -1,0 +1,9 @@
+<p>list-user works!</p>
+<button (click)="add()">add user</button>
+<div *ngFor="let u of userData">
+<a (click)="edit(u)">
+
+  {{u | json}}
+</a><button (click)="del(u)">delete</button>
+
+</div>
